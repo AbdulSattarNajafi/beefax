@@ -1,0 +1,50 @@
+.portfolio-header{
+  background: url('./../images/portfolio-images/bg.jpg');
+  @include header;
+}
+.gallery-menu{
+  padding: $sectionPadding;
+  .gallery-links{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .filter-btn{
+      margin-right: .6rem;
+      margin-bottom: 1rem;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .gallery-items{
+    margin-top: 2rem;
+    .item{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .item-img{
+        width: 49%;
+      }
+      .item-desc{
+        width: 49%;
+        margin-top: 1.4rem;
+        h5{
+          margin-top: 4px;
+        }
+        p{
+          margin: 1.7rem 0;
+        }
+        .item-links{
+          display: flex;
+          .primary-btn:first-child{
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

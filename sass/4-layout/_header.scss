@@ -1,0 +1,90 @@
+.hero{
+  margin-top: -60px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  .slider-container{
+    display: flex;
+    .slide{
+      min-width: 100vw;
+      position: relative;
+      z-index: 22;
+      .slide-img{
+        max-width: 100%;
+      }
+      .hero-title{
+        position: absolute;
+        top: 23%;
+        left: 10%;
+        right: 10%;
+        display: block;
+        h1{
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  .hero-cards{
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    z-index: 122;
+    .card{
+      background-color: $lightdark;
+      @include hovertransition;
+      .hero-icon{
+        font-size: 1.5rem;
+        color: $darkpink;
+      }
+      &:hover{
+        background-color: $darkpink;
+        .hero-icon{
+          color: $white;
+        }
+      }
+      h4{
+        margin: 1rem 0;
+      }
+    }
+  }
+  .slider-control-left{
+    position: absolute;
+    top: 0;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    button{
+      font-size: 2rem;
+    }
+  }
+  .slider-control-right{
+    position: absolute;
+    top: 0;
+    right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    button{
+      font-size: 2rem;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .hero{
+    margin-top: -1px;
+    .slider-container{
+      .slide{
+        .hero-title{
+          top: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}

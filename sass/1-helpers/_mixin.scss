@@ -1,0 +1,21 @@
+@mixin rowflex {
+  display: flex;
+  align-items: center;
+}
+@mixin hovertransition {
+  transition: all .4s ease-out;
+}
+@mixin fullwidth{
+  width: 100%;
+  height: auto;
+}
+@mixin header{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0;
+  margin-top: -60px;
+}

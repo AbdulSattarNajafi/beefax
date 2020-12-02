@@ -1,0 +1,49 @@
+.services-header{
+  background: url('./../images/services-images/bg.jpg');
+  @include header;
+}
+/*Services Cards*/
+.services-cards{
+  padding: $sectionPadding;
+  .services-container{
+    display: grid;
+    grid-gap: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    .grid-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-radius: 4px;
+      background-color: $lightdark;
+      @include hovertransition;
+      .big-icon{
+        font-size: 2rem;
+        color: $darkpink;
+        @include hovertransition;
+      }
+      h4{
+        margin: 1rem 0;
+      }
+      .arrow-btn{
+        font-size: 1.8rem;
+        color: $darkpink;
+        margin-top: .8rem;
+        padding: 0 10px;
+        @include hovertransition;
+      }
+      &:hover{
+        background-color: $darkpink;
+        .big-icon{
+          color: $white;
+        }
+        .arrow-btn{
+          color: $white;
+        }
+      }
+    }
+  }
+}

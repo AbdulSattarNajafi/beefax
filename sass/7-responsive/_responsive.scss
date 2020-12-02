@@ -1,0 +1,374 @@
+/*------------------- Responsive Media Query for max-width 1100px-------------------------*/
+@media (max-width: 1100px) {
+  .hero .hero-cards .card{
+    padding: .5rem;
+    h4{
+      margin: .5rem 0;
+    }
+  }
+  /*Responsive for Home About*/
+  .home-about{
+    .card-container{
+      .big-card{
+        margin: 1rem 3rem 0rem 1rem;
+        .first-img{
+          top: -2rem;
+          left: -1rem;
+        }
+        .second-img{
+          top: 1rem;
+          left: 2rem;
+        }
+      }
+      .big-card{
+        padding-top: 2rem;
+        .desc-text{
+          margin: 0 0 1.5rem 0;
+        }
+      }
+      .right-card{
+        margin-right: 0;
+      }
+    }
+  }
+  /*Responsive for the Great section*/
+  .great .great-container{
+    width: 70%;
+  }
+  /*Responsive for Clients*/
+  .clients{
+    .client-container{
+      .client-img{
+        .frame{
+          width: 100%;
+          right: 1.5rem;
+        }
+      }
+      .client-says{
+        width: 56%;
+      }
+    }
+  }
+}
+/*------------------- Responsive Media Query for max-width 991px-------------------------*/
+@media (max-width: 991.98px) { 
+  .wrapper{
+    width: 92%;
+  }
+  .navbar{
+    width: 92%;
+  }
+}
+/*------------------- Responsive Media Query for max-width 920px-------------------------*/
+@media (max-width: 920px) {
+  .hero .slider-container .slide .hero-title{
+    top: 30%;
+  }
+  .hero .hero-cards{
+    display: none;
+  }
+/*Responsive for Home About*/
+.home-about .card-container .right-card{
+    padding-top: 0;
+  }
+  /*Responsive for the Great section*/
+  .great .great-container{
+    width: 80%;
+  }
+  /*Responsive for footer*/
+  footer .top-footer .top-container{
+    .social-media{
+      width: 37%;
+    }
+    .information{
+      width: 20%;
+    }
+    .news-letter{
+      width: 37%;
+    }
+  }
+  /*Responsive for scroll up*/
+  .scroll-up{
+    font-size: 1rem;
+    bottom: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+/*------------------- Responsive Media Query for max-width 767px-------------------------*/
+@media (max-width: 767.98px) {
+  .wrapper{
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .navbar{
+    width: 100%;
+    height: 50px;
+    padding: 0 1rem;
+    background-color: $black;
+    justify-content: space-between;
+    .logo-container img{
+      width: 110px;
+      height: auto;
+    }
+    .nav-menu{
+      background-color: $black;
+      align-items: flex-start;
+      justify-content: space-between;
+      position: absolute;
+      right: 0;
+      top: 50px;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      padding: 0 1rem;
+      @include hovertransition;
+      z-index: 9;
+      .nav-links{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 0;
+        li{
+          margin-bottom: .3rem;
+        }
+      }
+      .search-container{
+        padding: 1rem 0;
+        .close-btn{
+          display: inline-block;
+          margin-left: .4rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .menu-btn-container{
+      display: block;
+      .menu-btn{
+        display: block;
+      }
+    }
+  }
+  .search-area .search-input{
+    width: 60%;
+  }
+  /*Responsive for Hero section*/
+  .hero .slider-container .slide .hero-title{
+    display: none;
+  }
+  .hero .slider-control-right, .hero .slider-control-left{
+    display: none;
+  }
+  /*REsponsive for Home-About*/
+  .home-about{
+    .column-container{
+      display: flex;
+      flex-direction: column;
+      .big-card{
+        margin: 0;
+        .first-img{
+          width: 80%;
+          top: 0;
+          left: 0;
+        }
+        .second-img{
+          width: 80%;
+          top: 30%;
+          right: 0;
+          left: 20%;
+        }
+        .frame{
+          height: 90%;
+          width: 80%;
+          top: 10%;
+          right: 10%;
+          left: 10%;
+        }
+      }
+      .right-card{
+        margin-top: 6rem;
+      }
+    }
+  }
+  /*Responsive for the Great section*/
+  .great .great-container{
+    width: 100%;
+  }
+    /* responsive for Home-Portfolio*/
+  .home-portfolio .card-container{
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .facts .item-container{
+    flex-flow: row wrap;
+    padding: 2rem 0;
+    .item{
+      width: 49%;
+      margin-bottom: 1rem;
+      &:nth-child(2) {
+        &::after{
+          width: 0;
+        }
+      }
+    }
+  }
+  /*Responsive for Clients*/
+  .clients .client-container .client-says{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  /*Responsive for Blog*/
+  .blog .card-slider-container .card-container .blog-card {
+    min-width: 49%;
+    margin-right: 2%;
+  }
+  /*Responsive for Brands*/
+  .brands{
+    padding: 2rem 0;
+  }
+  /*Responsive for Footer*/
+  footer .top-footer .top-container{
+    .social-media{
+      width: 49%;
+      margin-bottom: 2.5rem;
+      .social-icons{
+        width: 90%;
+      }
+    }
+    .information{
+      width: 49%;
+    }
+    .news-letter{
+      width: 49%;
+    }
+  }
+  footer .lower-footer .lower-container{
+    justify-content: center;
+    .banks{
+      display: none;
+    }
+  }
+  /*----------Responsive for About Page--------*/
+  /*About Header*/
+  .header, .services-header, .portfolio-header, .blog-header, .contact-header, .faq-header{
+    margin-top: -1px;
+    padding: 5rem 0;
+  }
+  /*----------Responsive for Services Page--------*/
+  /*Services Cards*/
+  .services-cards .services-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*----------Responsive for Portfolio Page--------*/
+  .gallery-menu .gallery-items .item{
+    flex-direction: column;
+    .item-img{
+      width: 100%;
+      img{
+        min-width: 100%;
+      }
+    }
+    .item-desc{
+      width: 100%;
+    }
+  }
+  /*----------Responsive for Contact Page--------*/
+  .contact-form .contact-container{
+    flex-direction: column;
+    .form{
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    .contact-info{
+      width: 100%;
+    }
+  }
+
+}
+/*------------------- Responsive Media Query for max-width 575px-------------------------*/
+@media (max-width: 575.98px) {
+  /* responsive for Home-Portfolio*/
+  .home-portfolio .card-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .facts .item-container .item{
+    width: 100%;
+    &::after{
+      width: 0;
+    }
+  }
+  /*Responsive for home-Clients*/
+  .clients{
+    .client-container{
+      flex-flow: row wrap;
+      .client-img{
+        width: 100%;
+        .img{
+          width: 86%;
+        }
+        .frame{
+          width: 80%;
+          height: 100%;
+          left: 19%;
+          top: 10%;
+        }
+      }
+      .client-says{
+        width: 100%;
+        margin-top: 5rem;
+        .center-container{
+          position: relative;
+          margin-top: 3rem;
+          display: flex;
+          .client-slide{
+            margin-right: 1rem;
+            min-width: 100%;
+            text-align: center;
+            .under-line{
+              &::after{
+                display: none;
+              }
+            }
+          }
+        }
+        .circle-btns{
+          justify-content: center;
+        }
+      }
+    }
+  }
+  /*Responsive for Blog*/
+  .blog .card-slider-container .card-container .blog-card {
+    min-width: 100%;
+    margin-right:0;
+  }
+  /*Responsive for footer*/
+  footer .top-footer .top-container{
+    .social-media{
+      width: 100%;
+    }
+    .information{
+      width: 100%;
+      margin-bottom: 2.5rem;
+    }
+    .news-letter{
+      width: 100%;
+    }
+  }
+  footer .lower-footer .lower-container .copy-right p{
+    font-size: .8rem;
+  }
+  /*----------Responsive for About Page--------*/
+  /*Header*/
+  .header{
+    padding: 4rem 0;
+  }
+  /*About*/
+  .home-about .card-container .right-card h4::after{
+    display: none;
+  }
+  /*----------Responsive for Services Page--------*/
+  /*Services Cards*/
+  .services-cards .services-container{
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,34 @@
+.faq-header{
+  background: url('./../images/faq-images/bg.jpg');
+  @include header;
+}
+.faq-content{
+  padding: $sectionPadding;
+  .article-box{
+    display: flex;
+    flex-direction: column;
+    .question{
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid gray;
+      button .minus-btn{
+        display: none;
+      }
+    }
+    .answer{
+      display: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid gray;
+    }
+  }
+  .show-answer .question button .minus-btn{
+    display: block;
+  }
+  .show-answer .question button .plus-btn{
+    display: none;
+  }
+  .show-answer .answer{
+    display: block;
+  }
+}

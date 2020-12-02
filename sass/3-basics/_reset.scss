@@ -1,0 +1,126 @@
+/*cards container*/
+.card-container{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  width: 31.3%;
+  padding: 2rem 1rem;
+  border-radius: 4px;
+}
+/*Big-card*/
+.big-card{
+  width: 48%;
+}
+/*card-Slider-container*/
+.card-slider-container{
+  position: relative;
+  overflow: hidden;
+}
+/*Dark background Cards*/
+.dark-bg-card{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 4px;
+  min-width: 31.3%;
+  background-color: $lightdark;
+  @include hovertransition;
+  &:nth-child(even){
+    margin: 0 3% ;
+  }
+  p{
+    margin: 1rem 0;
+  }
+  i{
+    color: $darkpink;
+  }
+  .big-icon{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &:hover{
+    background-color: $darkpink;
+    i{
+      color: $white;
+    }
+  }
+}
+/*Portfolio Cards*/
+.port-card{
+  position: relative;
+  border-radius: 4px;
+}
+.card-layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h4{
+    margin: 0;
+    color: #fff;
+  }
+  p{
+    margin: 0;
+    color: #fff;
+  }
+  border-radius: 4px;
+  background-color: $darkpink;
+  opacity: 0;
+  @include hovertransition;
+  &:hover{
+    opacity: .7;
+  }
+}
+/*Section Header Texts*/
+.section-header{
+  margin-bottom: 3rem;
+  h2{
+    border-left: 3px solid $darkpink;
+    padding: 0 1rem;
+    line-height: 1.8rem;
+    margin-bottom: 0;
+  }
+  .pink-text{
+    margin-left: 1rem;
+  }
+}
+/*----------------------Responsive Styling---------------------------------*/
+@media (max-width: 1100px) {
+  .card{
+    padding: 1.5rem 1rem;
+  }
+  .dark-bg-card{
+    padding: 1.5rem 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  /*cards container*/
+  .card{
+    min-width: 49%;
+  }
+  /*Big-card*/
+  .big-card{
+    min-width: 100%;
+  }
+  .dark-bg-card{
+    min-width: 49%;
+  }
+}
+@media (max-width: 575.98px) {
+  /*cards container*/
+  .card{
+    min-width: 100%;
+  }
+  .dark-bg-card{
+    min-width: 100%;
+  }
+}

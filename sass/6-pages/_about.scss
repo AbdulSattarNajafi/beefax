@@ -1,0 +1,83 @@
+.header{
+  background: url('./../images/about-images/bg.jpg');
+  @include header;
+}
+/*About*/
+.home-about .card-container{
+  .big-card .frame{
+    z-index: 10;
+  }
+  .right-card{
+    margin-right: 0;
+    h4{
+      margin-bottom: 2rem;
+      position: relative;
+      display: flex;
+      text-transform: none;
+      font-size: 1.8rem;
+      &::after{
+        content: "";
+        position: absolute;
+        left: 250px;
+        bottom: 6px;
+        width: 20%;
+        height: 1.2px;
+        background-color: $darkpink;
+      }
+    }
+    .italic{
+      font-style: italic;
+      font-weight: 300;
+    }
+  }
+}
+/*Team*/
+.team{
+  padding: $sectionPadding;
+  .team-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .card{
+      padding: 0;
+      position: relative;
+      margin-bottom: 1rem;
+      .team-layer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 1rem .5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-radius: 4px;
+        opacity: 0;
+        @include hovertransition;
+        .team-social{
+          font-size: .8rem;
+          a{
+            margin-right: 4px;
+            &:last-child{
+              margin-right: 0;
+            }
+            @include hovertransition;
+            &:hover{
+              color: $darkpink;
+            }
+          }
+        }
+        p{
+          font-size: .8rem;
+        }
+      }
+      &:hover{
+        .team-layer{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

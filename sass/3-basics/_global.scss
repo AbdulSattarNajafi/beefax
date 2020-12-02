@@ -1,0 +1,43 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: $darkcolor;
+  color: $white;
+}
+.pink-text{
+  color: $darkpink;
+}
+.wrapper{
+  max-width: 1220px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: $white;
+  text-transform: capitalize;
+}
+.responsive-img{
+  max-width: 100%;
+  height: auto;
+  filter: brightness(90%);
+  border-radius: 4px;
+}
+
+
+
+
+

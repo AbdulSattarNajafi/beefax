@@ -1,0 +1,102 @@
+.navbar{
+  position: relative;
+  max-width: 1220px;
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  background-color: transparent;
+  @include rowflex;
+  justify-content: space-between;
+  z-index: 888;
+  .logo-container img{
+    width: 130px;
+    height: auto;
+  }
+  .nav-menu{
+    @include rowflex;
+    .nav-links{
+      @include rowflex;
+      li{
+        margin-right: .5rem;
+        a{
+          display: block;
+          position: relative;
+          padding: 6px;
+          font-size: 1rem;
+          font-weight: 500;
+          @include hovertransition;
+          &::after{
+            content: "";
+            position: absolute;
+            top: 28px;
+            left: 6px;
+            width: 0;
+            height: 2px;
+            background-color: transparent;
+            @include hovertransition;
+          }
+          &:hover{
+            &::after{
+              width: 82%;
+              background-color: $darkpink;
+            }
+          }
+        }
+        a.active::after{
+          width: 82%;
+          background-color: $darkpink;
+        }
+      }
+    }
+    .search-container{
+      .search-btn{
+        font-size: 1rem;
+      }
+      .close-btn{
+        display: none;
+      }
+    }
+  }
+  .menu-btn-container{
+    display: none;
+    .menu-btn{
+      display: none;
+    }
+  }
+}
+/*Search area*/
+.search-area{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: rgba(0, 0 , 0, .9);
+  @include hovertransition;
+  display: none;
+  .close-search{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+  }
+  .search-input{
+    width: 40%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 2rem;
+  }
+}
+.show-search-area{
+  display: block;
+  display: flex;
+}
+ 

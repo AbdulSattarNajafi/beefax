@@ -1,0 +1,7 @@
+/*----------------------- Responsive Media Quaries ---------------------------*/
+@media (max-width: 1100px) {
+  .hero .hero-cards {
+    display: none;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

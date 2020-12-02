@@ -1,0 +1,20 @@
+.error{
+  padding: $sectionPadding;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .error-text{
+    display: flex;
+    align-items: center;
+    #large-font{
+      font-size: 5rem;
+    }
+  }
+  .large-text{
+    font-size: 1.6rem;
+  }
+  .home-btn{
+    margin-top: 3rem;
+  }
+}
